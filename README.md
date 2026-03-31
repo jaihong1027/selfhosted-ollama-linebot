@@ -2,9 +2,9 @@
 A LINE-integrated AI agent powered by a locally deployed LLM using Ollama.
 
 ## Project Background / 專案背景
-This project was inspired by the concept of AI Agents—autonomous tools capable of handling tasks on behalf of users. To explore this technology while prioritizing data privacy and system security, I utilized a dedicated older PC to host the OpenClaw framework, as it requires extensive system permissions.
+This project explores the implementation of an **AI Agent** using the OpenClaw framework. Due to the high system permissions required for agent automation, I deployed the system on a dedicated hardware environment to ensure **data privacy and security**. After hitting the usage limits of cloud APIs (Google Gemini) during testing, I transitioned to a **Self-Hosted AI** architecture using **Ollama** to bypass quotas and ensure operational security.
 
-這個專案的靈感來自 AI Agent 的概念。為了在研究這項技術的同時確保資訊安全，我找了一台閒置的舊電腦來安裝 OpenClaw，避免將主要設備的權限直接開放給自動化工具。
+本專案旨在實作基於 OpenClaw 框架的 AI Agent。考量到自動化工具需要較高的系統權限，我選擇在獨立的硬體環境執行以確保資料安全與隱私。測試期間因雲端 API (Google Gemini) 達到使用限額，故轉向使用 **Ollama** 進行本地端部署，以解決配額限制並強化運作安全。
 
 ## Key Milestones / 實作歷程
 * **Cross-Platform Integration**: Researched and implemented LINE Messaging API integration to enable remote control of the AI Agent via smartphone.
