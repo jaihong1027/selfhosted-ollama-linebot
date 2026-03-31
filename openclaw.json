@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.3.28",
+    "lastTouchedAt": "2026-03-31T10:00:00.000Z"
+  },
+  "auth": {
+    "profiles": {}
+  },
+  "agents": {
+    "defaults": {
+      "model": "ollama/qwen2.5:0.5b",
+      "workspace": "./workspace"
+    }
+  },
+  "channels": {
+    "line": {
+      "enabled": true,
+      "channelSecret": "LINE_CHANNEL_SECRET",
+      "channelAccessToken": "LINE_ACCESS_TOKEN"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "loopback",
+    "controlUi": {
+      "allowedOrigins": ["*"]
+    },
+    "auth": {
+      "mode": "token",
+      "token": "GATEWAY_TOKEN"
+    }
+  },
+  "plugins": {
+    "allow": []
+  }
+}
