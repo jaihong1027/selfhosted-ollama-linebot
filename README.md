@@ -6,7 +6,7 @@ This project explores the implementation of an **AI Agent** using the OpenClaw f
 
 本專案旨在實作基於 OpenClaw 框架的 AI Agent。考量到自動化工具需要較高的系統權限，我選擇在獨立的硬體環境執行以確保資料安全與隱私。測試期間因雲端 API (Google Gemini) 達到使用限額，故轉向使用 **Ollama** 進行本地端部署，以解決配額限制並強化運作安全。
 
-## Key Milestones / 實作歷程
+## Development Process / 實作歷程
 * **Cross-Platform Integration**: Researched and implemented LINE Messaging API integration to enable remote control of the AI Agent via smartphone.
   * **跨平台整合**：研究並實作 LINE Messaging API 串接，實現透過手機即可遠端操控 AI Agent。
 * **From Cloud to Local**: After reaching the usage limits of cloud-based APIs (Google Gemini), I transitioned to a self-hosted AI architecture to ensure continuous availability.
