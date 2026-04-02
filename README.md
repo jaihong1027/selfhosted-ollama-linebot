@@ -2,7 +2,7 @@
 A LINE-integrated AI agent powered by a locally deployed LLM using Ollama.
 
 ## Project Background / 專案背景
-This project explores the implementation of an **AI Agent** using the OpenClaw framework. Due to the high system permissions required for agent automation, I deployed the system on a dedicated hardware environment to ensure **data privacy and security**. After hitting the usage limits of cloud APIs (Google Gemini) during testing, I transitioned to a **Self-Hosted AI** architecture using **Ollama** to bypass quotas and ensure operational security.
+This project explores the implementation of an **AI Agent** using the OpenClaw framework. Due to the privileged access required for agent automation, I deployed the system on a dedicated hardware environment to ensure **data privacy and security**. After hitting the usage limits of cloud APIs (Google Gemini) during testing, I transitioned to a **Self-Hosted AI** architecture using **Ollama** to bypass quotas and ensure operational security.
 
 本專案旨在實作基於 OpenClaw 框架的 AI Agent。考量到自動化工具需要較高的系統權限，我選擇在獨立的硬體環境執行以確保資料安全與隱私。測試期間因雲端 API (Google Gemini) 達到使用限額，故轉向使用 **Ollama** 進行本地端部署，以解決配額限制並強化運作安全。
 
@@ -19,9 +19,9 @@ During testing, I observed significant response latency. My analysis identified 
 
 在實際測試中，我發現回覆速度較慢，分析後認為有兩個主因：
 
-* **Hardware Limitations**: The system runs on an Intel i3-4150 CPU, which faces computational constraints during large language model (LLM) inference.
+* **Hardware Limitations**: The system runs on an Intel i3-4150 CPU, reaches its computational limits during large language model (LLM) inference.
   * **硬體限制**：系統運行於 Intel i3-4150 CPU，在大型語言模型 (LLM) 推論時面臨運算效能瓶頸。
-* **Model Size**: Larger models impose a heavy load on the system's memory and processing power.
+* **Model Size**: Larger models strain a heavy load on the system's memory and processing power.
   * **模型規模**：較大的語言模型會對系統記憶體與運算能力造成沈重負擔。
 
 **Solution**: I optimized the configuration by selecting a smaller model (qwen2.5:0.5b), effectively balancing model functionality with the available hardware resources.
