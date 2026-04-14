@@ -1,6 +1,8 @@
 # selfhosted-ollama-linebot
 A LINE-integrated AI agent powered by a locally deployed LLM using Ollama.
 
+---
+
 ## Project Background / 專案背景
 This project explores the implementation of an **AI Agent** using the OpenClaw framework. Due to the privileged access required for agent automation, I deployed the system on a dedicated hardware environment to ensure **data privacy and security**. After hitting the usage limits of cloud APIs (Google Gemini) during testing, I transitioned to a **Self-Hosted AI** architecture using **Ollama** to bypass quotas and ensure operational security.
 
@@ -35,3 +37,9 @@ During testing, I observed significant response latency. My analysis identified 
   * **models.json**：本地端 Ollama 模型配置與推論參數定義。
 * **agents/**: AI persona definitions and custom system instructions.
   * **agents/**：AI 角色定位與自定義系統指令。
+
+
+---
+
+## License / 授權
+This project is licensed under the MIT License.
